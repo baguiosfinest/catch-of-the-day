@@ -1,0 +1,43 @@
+
+.order,.count-wrap{
+  overflow: hidden;
+  position: relative;
+}
+
+.order-enter{
+  transition: all .5s;
+  transform: translateX(-120%);
+}
+
+.order-enter-active{
+  transition: all .5s;
+  transform: translateX(0);
+}
+
+.order-leave{
+  transition: all .5s;
+  transform: translateX(-120%);
+}
+
+.count-enter,
+.count-enter-active,
+.count-leave,
+.count-leave-active{
+  transition: all .25s;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(0);
+}
+
+.count-enter{
+  transform: translateY(100%);
+}
+
+.count-enter-active{
+  transform: translateY(0);
+}
+
+.count-leave-active{
+  transform: translateY(-150%);
+}

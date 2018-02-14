@@ -1,0 +1,229 @@
+body, html{
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 30px;
+  font-family: sans-serif;
+  background: #ccc;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+}
+
+h1,h2,h3{
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+  font-family: 'Bungee Inline', cursive;
+}
+
+.store-selector{
+  max-width: 350px;
+  margin:  50px auto;
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  border: #000 2px solid;
+}
+
+.store-selector button{
+  border: 1px solid #000;
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  background: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.store-selector button:hover{
+  background: #ccc;
+}
+
+.store-selector input[type="text"]{
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: #000 2px solid;
+}
+
+.catch-of-the-day{}
+
+.catch-of-the-day .menu,
+.Order,
+.Inventory{
+  background: #fff;
+  padding: 20px;
+  border-style: double;
+  border-color: #000;
+  border-width: 10px;
+  float: left;
+  min-height: 800px;
+  height: 100%;
+}
+
+.catch-of-the-day .menu{
+  width: 35%;
+}
+
+.Order{
+  width: 30%;
+  border-left: none;
+  border-right: none;
+}
+
+.Inventory{
+  width: 35%;
+}
+
+.Header h1{
+  margin: 0;
+}
+
+.tagline{
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+p{
+  margin: 0 0 15px;
+}
+
+form {
+  border: #000 1px solid;
+}
+
+textarea, select,
+input[type="text"]{
+  display: block;
+  border: #ccc 1px solid;
+  padding: 5px;
+  font-size: 12px;
+}
+textarea{
+  border-color: #000;
+  min-height: 50px;
+}
+
+.fish-edit{
+  border: #000 1px solid;
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 20px;
+}
+.fish-edit > *{
+  flex: 1;
+  flex-grow: 1;
+  width: 33.3%;
+}
+
+.fish-edit textarea,
+.fish-edit button{
+  flex: 3 100%;
+  flex-grow: 3;
+}
+.fish-edit textarea{
+  border-left: none;
+  border-right: none;
+}
+.fish-edit button{
+  font-weight: bold;
+  font-size: 13px;
+  background: #fff;
+  border: none;
+  border-top: #000 1px solid;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.fish-edit button:hover{
+  background: #ccc;
+  
+}
+
+.list-of-fishes{
+  margin: 0 0 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.list-of-fishes img{
+  max-width: 50%;
+}
+
+.menu-fish{
+  margin-bottom: 20px;
+  position: relative;
+}
+
+button[disabled]{
+  color: red;
+  cursor: not-allowed;
+  font-weight: bold;
+  border-color:  red;
+}
+.menu-fish button[disabled]{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px 10px;
+  width: 150px;
+  margin-left: -85px;
+  margin-top: -50px;
+  background: #fff;
+  transform: rotate(-20deg)
+}
+
+.order{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.order li{
+  padding: 10px 0;
+  border-top: #ccc 1px solid;
+  display: flex;
+  font-weight: bold;
+}
+
+.order li span{
+  flex: 1 auto;
+}
+.order li .price{
+  text-align: right;
+}
+
+.order .total{
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  font-weight: bold;
+  padding: 20px 0;
+  text-align: right;
+  display: block;
+}
+
+.close{
+  display: inline-block;
+  padding: 3px 5px;
+  color: red;
+  border: red 1px solid;
+  margin-right: 10px;
+  font-size: 12px;
+  font-style: normal!important;
+  cursor: pointer;
+}
